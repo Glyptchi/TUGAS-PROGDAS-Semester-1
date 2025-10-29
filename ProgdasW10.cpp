@@ -65,7 +65,7 @@ void pintar(){
 
     int temp = high();
     
-    cout<<"The student who got highest score: "<<endl;
+    cout<<"\nThe student who got highest score: "<<endl;
     for(int i = 0; i < 20; i++){
 
         if(student[i].testScore==temp){
@@ -83,5 +83,6 @@ int main(){
     masukkan();
     grade();
     pintar();
+
 
 }
