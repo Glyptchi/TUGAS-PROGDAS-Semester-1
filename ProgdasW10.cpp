@@ -78,11 +78,25 @@ void pintar(){
 
 }
 
+void keluar(){
+
+    cout<<"\n==============Display================\n";
+    cout<<left<<setw(20)<<"Nama"<<setw(12)<<"Test Score"<<setw(8)<<"Grade"<<endl;
+
+    for(int i = 0; i < 20; i++){
+        string temp = student[i].studentLName + ", " + student[i].studentFName;
+        cout<<left<<setw(20)<<temp<<setw(12)<<student[i].testScore<<setw(8)<<student[i].grade<<endl;
+
+    }
+    
+}
+
 int main(){
 
     masukkan();
     grade();
+    keluar();
     pintar();
 
-
+    return 0;
 }
